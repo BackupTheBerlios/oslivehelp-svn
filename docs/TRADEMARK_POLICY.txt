@@ -1,0 +1,68 @@
+Although Help Center Live is released under the GNU General Public License, we do enforce our copyright rights concerning the Help Center Live solution. This means that, while you have considerable freedom to modify and redistribute Help Center Live, there are conditions placed on the Help Center Live copyright notices.
+
+The Help Center Live copyright announcement displayed on the back end of Help Center Live complies with section 2c of the GNU General Public License (GPL) and thus can not be removed, or may only be appropriately modified.
+
+It is not the intention of the Help Center Live Backend copyright announcement to claim rights or contest your rights to work written entirely by you; rather, the intent is to exercise the right to control the distribution of derivative or collective works based on Help Center Live.
+
+It is entirely within your right, however, to add to the copyright notice to claim rights on the changes you have made.
+
+The Help Center Live copyright announcement displayed on the front end portion of Help Center Live can, however, be modified, if the layout of the theme has been modified to distinguish itself from the default Help Center Live copyrighted theme.
+
+Please note that the Help Center Live back end copyright announcement must still exist, even if the default Help Center Live copyrighted front end theme has been modified.
+
+The separate text "Powered by Help Center Live", or similar text, displayed on the back end theme is optional to have displayed. In the front end it must be displayed even if the layout of the theme is changed.
+
+
+Trademark Policy
+
+Although Help Center Live is released under the GNU General Public License, we do enforce our trademark rights concerning the Help Center Live name and logo. This means that, while you have considerable freedom to modify and redistribute Help Center Live, there are restrictions placed on the usage of the Help Center Live name and logo.
+
+Redistributing Or Offering Unmodified Versions Of Help Center Live
+
+The Help Center Live name and logo may be used if you are redistributing or offering unmodified versions of Help Center Live as made available on the Help Center Live website (http://www.helpcenterlive.com).
+
+This provision is intended to cover situations like distributing Help Center Live on software/magazine CDs and hosting providers offering Help Center Live as an CRM solution.
+
+"Unmodified" means without any changes made whatsoever, which includes the integration of contributions not available as standard features.
+
+<b>Using The Help Center Live Name</b>
+
+Usage of the Help Center Live name is allowed if no alterations have been made, such as incorrect casing or incorrect spelling.
+
+The correct casing and spelling to use is Help Center Live or Help Centre Live.
+
+
+Using The Help Center Live Logo
+
+Usage of the Help Center Live logo is allowed if no alterations have been made, such as additonal or removal of graphics or text, or changing the colours.
+
+The logo may be scaled proportionally and may use a transparent background.
+
+<b>Linking To The Help Center Live Website</b>
+
+The Help Center Live website must be linked or referenced to when using the Help Center Live name or logo.
+
+The address of the Help Center Live website is: http://www.helpcenterlive.com
+
+
+Why Trademarks Are Important
+
+Trademarks are important because they help to prevent confusion in the marketplace by distinguishing one entity's products and services from the products and services of another.
+
+For example, when a user sees the Help Center Live mark on the Help Center Live software, the user understands that Help Center Live has either created or endorsed that product, and that the product is subject to the quality control standards of Help Center Live for that product.
+
+If anyone other than Help Center Live were to use an Help Center Live mark to promote a service, users could be misled into thinking that the unauthorized person's products or services were created or endorsed by Help Center Live, or that those products or services met the quality control standards of Help Center Live.
+
+
+Trademarks And The GNU General Public License
+
+The GNU General Public License (GPL) permits third parties to use and redistribute the underlying software under certain conditions. Such use and/or redistribution of Help Center Live software products are welcomed by Help Center Live, but should be distinguished from the use of the Help Center Live marks.
+
+The GPL does not provide any license or right to use an Help Center Live mark in any form or media. Thus, although a GPL licensee may redistribute the underlying software, a GPL licensee may not use a Help Center Live mark, as in doing so, that does not conform to the Help Center Live trademark policy without written permission of Help Center Live.
+
+By adhering to the Help Center Live trademark policy, you help Help Center Live to prevent confusion in the marketplace and to protect and enhance the value and integrity of its solutions and marks. Help Center Live appreciates your cooperation in this effort.
+
+
+Agreement
+
+By downloading and/or using Help Center Live, you acknowledge that you have read and agree to the trademark policy.

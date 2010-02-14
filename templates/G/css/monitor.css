@@ -1,0 +1,77 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+td {
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+a {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana;
+    text-decoration: none;
+	color: #444444;
+	font-size: 10px;
+}
+#content {
+	background-image: url(../images/bg/popup_page.jpg);
+	background-repeat: repeat-x;
+}
+.selected {
+    font-weight: bold;
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+.not_selected {
+    font-weight: normal;
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+.bg {
+	background-image: url(../images/bg/popup_status.jpg);
+	background-repeat: repeat-x;
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+.status_bg {
+	background-image: url(../images/bg/popup_header.jpg);
+	background-repeat: repeat-x;
+	font-family: Verdana;
+	color: #444444;
+	font-size: 10px;
+}
+
+table.list {
+border: 1px solid #CCCCCC;
+background-color: #FFFFFF;
+}
+
+table.list tr td {
+border-bottom: 1px solid #CCCCCC;
+padding: 5px;
+}
+
+table.list tr.alt td {
+    background-color: #D9F2FF;
+}
+
+table.list tr.main td {
+background-color: #DDDDDD;
+}
+
+table.list tr td.mini-button {
+padding: 0;
+margin: 0;
+}
+
+table.list tr td.mini-button img {
+padding: 2px 0 2px 5px;
+} 

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #0099CC;
+    background-position: 50% 0;
+    background-color: #76A2C5;
+}
+
+#wrapper {
+    text-align: center;
+    width: 760px;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    background-image: url(../images/bg/wrapperbg.jpg);
+    background-repeat: repeat-y;
+}
+
+#page {
+    margin: 10px 20px 0 20px;
+    padding: 3px 3px 20px 3px;
+    text-align: left;
+    font-size: 12px;
+    font-family: Verdana;
+}
+
+#header {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/bg/header.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #76A2C5;
+}
+
+#header img {
+    margin: 0 20px 0 0;
+}
+
+#nav {
+    position: relative;
+    margin: 0 14px 0 14px;
+    padding: 5px 0 3px 0;
+    text-align: left;
+    background-image: url(../images/bg/nav.jpg);
+    background-repeat: repeat-x;
+    border-style: solid;
+    border-color: #EEEEEE;
+    border-width: 0 0 1px 0;
+}
+
+#nav a {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    width: 730px;
+}
+a img {
+    border-style: none;
+}
+
+#footer {
+    margin: 0 auto 0 auto;
+    padding-top: 5px;
+    height: 20px;
+    font-size: 10px;
+    font-family: Verdana;
+    color: #467295;
+    background-image: url(../images/bg/footer.jpg);
+    background-repeat: repeat-x;
+    text-align: center;
+    width: 736px;
+}
+a {
+    font-family: Verdana;
+    color: #555555;
+    padding: 3px;
+}
+#footer a {
+    font-family: Verdana;
+    color: #467295;
+    text-decoration: none;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+    font-family: "Trebuchet MS";
+    color: #222222;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+    padding: 5px;
+    font-family: "Trebuchet MS";
+    color: #222222;
+    font-size: 24px;
+}
+
+table.list {
+border: 1px solid #CCCCCC;
+background-color: #FFFFFF;
+}
+
+#page table.list {
+width: 702px;
+border: 1px solid #CCCCCC;
+background-color: #FFFFFF;
+}
+
+#page #small table.list {
+width: 300px;
+border: 1px solid #CCCCCC;
+background-color: #FFFFFF;
+}
+
+table.list tr td {
+border-bottom: 1px solid #CCCCCC;
+padding: 5px;
+    font-family: Verdana;
+    color: #222222;
+    font-size: 11px;
+}
+
+table.list tr.alt td {
+    background-color: #D9F2FF;
+}
+
+table.list tr.main td {
+background-color: #DDDDDD;
+}
+
+table.list tr td.mini-button {
+width: 24px;
+padding: 1px 0 1px 0;
+} 

@@ -1,0 +1,1 @@
+{$lang.start_live_help_info}

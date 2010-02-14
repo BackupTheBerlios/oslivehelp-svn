@@ -1,0 +1,128 @@
+  #################################
+  ### Help Center Live Modules  ###
+  #################################
+
+###### Notes ######
+  This file is not intented for end users trying to install modules, please read the author's
+  installation instructions located in the distributed package, generally called 'HCL_MOD_INSTALL.txt'
+  
+  Version 2.1.x modules are very different then 3.0.x.  Please keep this in mind, there is a better interface 
+  coming!
+
+####### Module Overview ######
+  We aim to make sure producing and implementing modules to Help Center Live is as painless
+  as possible so that more great modules get produced, helping Help Center Live to expand and
+  so that end users have a hastle free time installing them
+
+###### Coding Standards ######
+  We follow Pear's coding standards, and so should you. If you have not heard of Pear, them point
+  your browser to http://pear.php.net
+  If you spot some code that contradicts the coding standards then please notify us at
+  admin@helpcenterlive.com so that we can correct it.
+
+###### License ######
+  Your modules should be released under the GNU General Public License. Remember to include the license
+  header and your copyright notice at the top of each of your module's files. If you are porting an existing
+  application into a module, then the application's license must be compatible with the GPL license.
+
+###### Implementation ######
+  Modules will be placed in the 'modules' directory in the root of the Help Center Live main directory.
+  Each module should have its own sub-directory within the modules directory. Make sure the name of this
+  sub-directory only contains letters a-z and numbers 0-9.
+  Inside your module's directory sould be the module's files and also a directory called 'hcl'. The 'hcl'
+  directory contains files that allow Help Center Live to recognise the module and know what to do with it.
+  The essential files within this directory are 'config.php' which contains configuration options for
+  Help Center Live. All configuration options for the module itself should not be in this file, but instead in
+  a different file such as 'config.php' in the module's main folder. The other essential file is 'auth.php'
+  This file is mainly used for ports of existing applications so that the authentication of the user logged
+  into Help Center Live can be passed across into the format required for the apllication that is being ported.
+  If you are creating a module from scratch, we urge you to use Help Center Live's existing authentication procedure
+  to make things easier.
+  The module is wrapped within a tempate called mod_MODULE.tpl where 'MODULE' is the name of your module (the same
+  as its directory name). All admin files are wrapped within the admin.tpl that already exists within Help Center
+  Live to make things look generic on the admin side.
+
+###### Development ######
+
+  ## Implementation Files ##
+
+  The Help Center Live recognition files discussed above are discussed below in more detail so that you can understand
+  what is needed within these files.
+
+   # config.php:
+
+    If you open the 'Help Center' module's config.php file you will see that there are a list of variables being set used
+    within the module. They are all commented so please read the file. You can simply copy this config file and use it within
+    your module, making sure the variables are changed. All the variables in the Help Center module are required within the
+    config file. The most important thing to do is change the name of the config array to your module e.g.:
+
+      $GLOBALS['conf']['modules']['HelpCent']...
+
+      to
+
+      $GLOBALS['conf']['modules']['MODULE']...
+
+    where 'MODULE' is the name of your module (the same as its directory name).
+
+   # auth.php:
+
+    This file makes sure the module is cross-authenticated with Help Center Live and is usually only used when existing
+    applications are ported into a module. If you are creating a module from scratch and do not need to carry over
+    authentication as you are using Help Center Live's authentication directly, you will still need this file to exist, but
+    just dont let it do anything.
+
+  ## Templating ##
+
+  You can also include a user-end template for your module that will wrap around the user end of the module. This file
+  must be called mod_MODULE.tpl where 'MODULE' is the name of your module (the same as its directory name). This template
+  file must be placed within the base directory of the template that is in use. In addition to this, there is one key
+  piece of code that must be included in the template:
+
+    {include file=$content}
+
+  This is needed to include the module file being requested.
+
+  ## Programming ##
+
+  Within your module you can declare any of the Help Center Live classes using the code:
+
+    $inc->class();
+
+  The class is then created and can be called from within a global scope
+  For example, if your module were to add a department, you would use:
+
+    $inc->department();
+    $GLOBALS['department']->insert('Department Name', 'email@example.com');
+
+  Make sure all your module url's are prefixed properly so that they work. There are three different prefixes declared within
+  your module's config.php file that all have different uses.
+
+  $GLOBALS['conf']['modules']['MODULE']['url'] contains the prefix for your module that will be wrapped using the module file.
+  This is generally used for links.
+  e.g.: <a href="<?php echo($GLOBALS['conf']['modules']['MODULE']['url']); ?>index.php">Module's Default File</a>
+
+  $GLOBALS['conf']['modules']['MODULE']['realurl'] is the actual url to your module. This is usually used for urls that do not
+  require wrapping, such as image urls.
+  e.g.: <img src="<?php echo($GLOBALS['conf']['modules']['MODULE']['realurl']); ?>images/logo.gif" />
+
+  $GLOBALS['conf']['modules']['MODULE']['selfurl'] is the PHP_SELF variable with the arguements needed for the module wrapper.
+  e.g.: <form action="<?php echo($GLOBALS['conf']['modules']['MODULE']['selfurl']); ?>" method="post">
+
+  Note: of you are using a form that send data using GET you will need to make sure the original GET variables are included too.
+  To make this easy for you, there is a procedure in the config.php file of your module that creates the input fields for you.
+  All you then have to do is call it. e.g.:
+
+    <form action="<?php echo($GLOBALS['conf']['modules']['MODULE']['selfurl']); ?>" method="get">
+    <?php echo($GLOBALS['conf']['modules']['MODULE']['getargs']); ?>
+    <!-- other form input elements here -->
+    </form>
+
+###### Distribution ######
+  Module files and instructions of installation should be compressed into a zip or tar file, then posted
+  in the appropriate modules forum. We review the modules posted fairly often, and we think your module is
+  worthy enough, it will be included in the modules section of the website.
+
+###### Questions? ######
+  If you have any questions regarding the development of modules then please do not hesitate to
+  post a message on our forums located at http://www.ubertec.co.uk/forums
+

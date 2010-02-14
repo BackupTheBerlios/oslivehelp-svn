@@ -1,0 +1,1 @@
+{$lang.logout_success}

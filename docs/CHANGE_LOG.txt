@@ -1,0 +1,156 @@
+  ###################################
+  ### Help Center Live Change Log ###
+  ###################################
+
+
+  ### Version 2.1.5 - August ,20007 ###
+  - Fixed problem with transcript deletion
+  - Fixed major Security escalation issue
+  - Minor updates to auth.php to fix small errors
+  - More work on the transcript issue
+
+  
+  ### Version 2.1.4 - August 15, 2007 ###
+  - Fixed short_open_tag errors on newer PHP installs
+  - Fixed more file corruptions
+  - Added config option for operators to delete chat transcripts
+  - Fixed error in database.sql
+  - Fixed problems with the copyright symbol causing issues for some people (changed to (c))
+  - Fixed Timing issue in aardvark library
+  
+  ### Version 2.1.3 - July 3, 2007 ###
+  - Provided work around for PHP 5.2.2 bug in core
+  - Replaced osTicket with eTicket
+  - Fixed issue with themes not working correctly in eTicket on
+    PHP 5.2.3
+  - Fixed issue with initiate chats not working, put more real world timeouts into config
+  - Added more bots to the bot killer
+  - Fixed issue with setup wherein in some situations setup would fail at stage four on 
+    2.1.2 and 2.13Beta1
+  - Fixed some SQL issues with Windows servers.
+  - Fixed a bug in the Portuguese language file.
+  - Fixed a couple of bugs in setup
+  - Fixed a bug in the saving of transcripts which affected certain character maps.
+  - Added a config option to prevent operators from being able to delete transcripts (in 
+    config.php, add $conf['opdelete']=true; to turn on)
+  - Fixed by whereby Apache on Windows would give an error.
+  - Updated Smarty
+  - Updated PHPmailer
+  
+  
+  ### Version 2.1.2 - June 4th, 2006 ###
+  - Fixed booting of operators from WinApp
+  - Fixed php error notice if operator has no reviews
+  - Fixed monitor sound problems
+  - Fixed problems with visitors sometimes not being displayed
+  - Optimised default timers
+  - Added ability to pass nickname into chat from generated code
+  - Fixed problems with quotes in chat nickname
+
+
+  ### Version 2.1.1 - May 14th, 2006 ###
+  - Fixed file transfer over SSL
+  - Fixed initiate and CoBrowse problems over different subdomains
+  - Fixed view ticket URL problem
+  - Added parsing so that any incorrect module URL's will be dealt with correctly
+
+
+  ### Version 2.1.0 - May 1st, 2006 ###
+  - Added ability to put chat sessions on hold in WinApp
+  - Added department ordering
+  - Added department visibility
+  - Added the option for forum links in divert pages
+  - Added bot blocking so that (most) site crawlers are not logged as visitors
+  - Updated the HelpCenter module to use phpmailer instead of the mail() function
+  - Fixed osTicket SQL injection vulnerabilities
+  - Included operator's username in available_operators()
+  - Made database id optional when accepting/declining a chat
+  - Fixed stats errors
+  - Explained assignment polling
+  - Updated department selection so that it is not shown if there is only one department when requesting a chat
+  - Changed aif files to mp3
+  - Fixed problems with useragents containing pipes
+  - Fixed problem of not being able to send transcript after reviewing an operator
+  - Updated CoBrowsing
+  - Fixed review problem when no transcript available
+  - Fixed problem of alternating footprints loop when visitor has more than one page loaded.
+  - Added viewing of operator's reviews in statistics.
+  - Fixed undefined index errors when trying to extract search keywords
+  - Added timezone offsets
+  - Fixed osTicket attachment and banlist URL problem
+  - Fixed chat error when department/operator/guest name has a single quote
+  - Fixed problems with canned messages in WinApp
+
+
+  ### Version 2.0.6 - November 23rd, 2005 ###
+  - Fixed open ticket URL problem
+  - Fixed problems with error 24 in WinApp
+
+
+  ### Version 2.0.5 - October 10th, 2005 ###
+  - WinApp no longer needs safe_mode off
+  - Updated client.php for WinApp 2.0.3
+  - Added seach engine keyword extraction for WinApp
+  - Added operator rating system
+  - Fixed URL problems in osTicket
+  - Updated version number
+  - Fixed monitor design error in IE
+  - Included missing license file for phpmailer
+  - Fixed login problem in IE
+  - Fixed problem with smarty loop not showing all visitors
+  - Corrected a few typos
+
+
+  ### Version 2.0.4 - July 27th, 2005 ###
+  - Fixed problem with online status chaning to offine after a while when using WinApp
+  - Removed closing of chat request window when clicking trouble ticket link
+  - Fixed incorrect URLs in osTicket
+  - Updated Portuguese language pack
+  - Changed chat window sizes so that the height is larger to compensate for other languages.
+  - Changed the file class so that no errors are reported when file is empty
+  - Changed the database class to return false when query is empty
+
+
+  ### Version 2.0.3 - July 10th, 2005 ###
+  - Added updating of hostname for repeated visits
+  - Added danish language pack
+  - Changed chat timer to extend past 60 minutes
+  - Fixed bug with osTicket not sending notification emails
+  - Fixed problem with initiated chats not connecting
+  - Added easier configuration of SMTP ports
+  - Changed version number so that it is in an external file
+  - Added popup window's size to config file
+  - Fixed security issue that takes advantage of safe_mode settings
+  - Fixed problem with recursive file removal
+  - Removed database caching in client.php due to cache files being
+    deleted while the connection is open.
+
+
+  ### Version 2.0.2 - June 28th, 2005 ###
+  - Fixed error with request monitor when there are no visitors
+
+
+  ### Version 2.0.1 - June 25th, 2005 ###
+  - Fixed CoBrowse error. Long URL's now sent to WinApp, not shortened ones.
+  - Fixed problem with stripslashes when posting arrays fixed (caused problems in osTicket)
+  - Fixed problem with access denied for users in osTicket
+  - Fixed HTML error in /templates/G/live/divert.tpl
+  - Fixed fsockopen problem when sending email if chat was diverted
+  - Fixed broken links in osTicket
+  - Added optional use of database cache so that HCL can work with safe_mode
+  - Added rmhcl.php to delete the cache and compile directory contents
+  - Fixed CoMarker positioning problem
+  - Fixed osTickets search bug
+  - Fixed problem with CoBrowse page not synchronizing properly
+  - Changed WinApp footprints and history URL's so they are full instead of abbreviated
+  - Added option in config file to block IP addresses.
+  - Changed osTicket to open in a new window when operators are offline
+  - Changed operator chat request G template to look nicer
+  - Fixed operator chats
+  - Changed monitor to not display visitors with no page info
+  - Added checks to ensure operator is selected for operator chat
+
+
+  ### Version 2.0.0 - June 12th, 2005 ###
+  - Initial release of Help Center Live 2.0.0
+  - Entirely new code, so new changelog.

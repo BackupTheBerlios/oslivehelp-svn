@@ -1,0 +1,18 @@
+  #######################################
+  ### Help Center Live Module Install ###
+  #######################################
+
+  ### Install ###
+  This module does not need any installation and is active by default
+
+  ### Activate ###
+  To toggle the module being active, open the 'hcl.php' file in the module's
+  directory and change
+
+  $GLOBALS['conf']['modules']['osTicket']['active'] = true;
+
+  to
+
+  $GLOBALS['conf']['modules']['osTicket']['active'] = false;
+
+  or vice versa
